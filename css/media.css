@@ -1,7 +1,4 @@
 @media (max-width: 1200px) {
-    .hero--gen--h1 {
-        font-size: 65px;
-    }
     .about--gen2--h1 {
         font-size: 50px;
     }
@@ -25,7 +22,7 @@
 }
 
 @media (max-width: 992px) {
-    .hero--gen--h1 {
+    #hero .hero--gen--h1 {
         font-size: 35px;
     }
     .about--gen2--h1 {
