@@ -27,12 +27,87 @@ body {
   justify-content: space-between;
   padding: 10px;
 }
-#header .header--menu--list {
+#header .header--tit {
   display: flex;
-  list-style: none;
 }
-#header .header--menu--list--li {
-  margin: 0 0 0 40px;
+#header .header--tit--a {
+  padding: 0 20px;
+}
+#header .header--wrapper #check-menu {
+  display: none;
+}
+#header .header--wrapper--label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px;
+}
+#header .header--wrapper--burger-line {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+}
+#header .header--wrapper--second, #header .header--wrapper--third {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+}
+#header .header--wrapper--fourth {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+}
+#header .header--wrapper--menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-height: 0;
+  font-size: 10px;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+#header .header--wrapper--menu--a {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 3px;
+  color: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #000;
+}
+
+#check-menu:checked ~ .header--wrapper--menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#check-menu:checked ~ .header--wrapper--burger-line {
+  display: none;
+}
+
+#check-menu:checked ~ .header--wrapper--second {
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .header--wrapper--third {
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .header--wrapper--fourth {
+  display: none;
 }
 
 #hero {
@@ -109,6 +184,9 @@ body {
 }
 #about .about--gen2 {
   margin: 0 0 0 50px;
+}
+#about .about--gen2--h1 {
+  font-size: 50px;
 }
 #about .about--gen2--num {
   display: flex;

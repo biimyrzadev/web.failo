@@ -1,20 +1,23 @@
-@media (max-width: 1200px) {
-    .about--gen2--h1 {
-        font-size: 50px;
-    }
+@media (max-width: 1400px) {
     .contact--tit {
         margin: 82px 0;
         font-size: 35px;
     }
+
     .work--bloke--img1--tit--btn {
         padding: 30px 30px;
         margin: 50px 0;
     }
+
     .service--gen--h1 {
         margin: 0 80px 50px 0;
     }
+
     .blog--tit--h1 {
         font-size: 35px;
+    }
+    #header .header--wrapper {
+        display: none;
     }
 }
 
@@ -25,9 +28,11 @@
     #hero .hero--gen--h1 {
         font-size: 35px;
     }
-    .about--gen2--h1 {
+
+    #about .about--gen2--h1 {
         font-size: 35px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -35,46 +40,14 @@
         margin: 35px 0;
         font-size: 15px;
     }
+
     #contact .contact--gen {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    #header .header--burger{
+    #header .header--wrapper {
         display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
     }
-    #header .header--burger--span{
-        position: absolute;
-        background-color: #eeeeee;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        top: 9px;
-    }
-    #header .header--burger:before,
-    #header .header--burger:after{
-        content:"";
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-    }
-    #header .header--burger:before{
-        top: 0;
-    }
-    #header .header--burger:after{
-        bottom: 0;
-    }
-    .header--menu{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    #header .header--menu--list {
+    #header .header--tit {
         display: none;
     }
 }
@@ -83,47 +56,66 @@
     .hero--gen--h1 {
         font-size: 20px;
     }
+
     .hero--gen--di--ge {
         font-size: 10px;
     }
+
     .about--gen2--h1 {
         font-size: 20px;
     }
+
     .about--gen2--num {
         flex-wrap: wrap;
         margin: 112px 0;
     }
+
     .about--gen1--img--as {
         margin: 12px;
         font-size: 10px;
     }
+
     .work--bloke--img1--tit--btn {
         padding: 11px 10px;
         margin: 20px 0;
     }
+
     .service--gen--h1 {
         margin: 10px 21px;
         font-size: 20px;
     }
+
     #blog .blog--tit--h1 {
         font-size: 20px;
     }
+
     #blog .blog--tit {
         display: block;
-        text-align: center;}
+        text-align: center;
+    }
+
     #blog .blog--img {
         display: block;
         text-align: center;
     }
+
     #blog .blog--img--gen {
-        width: 100%;}
+        width: 100%;
+    }
+
     #web .web {
         display: block;
     }
+
     #shop .shop--gen--tit {
         line-height: 15px;
         font-size: 10px;
     }
+
+    #header .header--burger:checked ~ . .header--menu {
+        display: block;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -131,31 +123,41 @@
         display: block;
         text-align: center;
     }
+
     #work .work--bloke {
         display: block;
     }
+
     #work .work--bloke2--tit {
         width: 100%;
     }
+
     #work .work--bloke2 {
         margin: 42px 52px 43px 2px;
     }
+
     #work .work--bloke2--img1 {
         width: 100%;
     }
+
     #service .service--gen--img1--btn {
         padding: 9px 27px;
         border-radius: 30px;
     }
+
     #blog .blog--tit--btn {
         padding: 12px 25px;
     }
+
     #contact .contact--gen--btn--bt--input {
         margin-bottom: 20px;
     }
+
     #hero .hero--gen--btn {
         margin-bottom: 1px;
     }
+
+
 }
 
 @media (max-width: 425px) {

@@ -7,23 +7,60 @@
   .header {
     @include flex;
     padding: 10px;
-
-    &--burger {
-
+    &--tit{
+      display: flex;
+      &--a{
+        padding: 0 20px;
+      }
     }
-
-    &--menu {
-      &--list {
-        display: flex;
-        list-style: none;
-
-        &--li {
-          margin: 0 0 0 40px;
+    &--wrapper{
+      #check-menu{
+        display: none;
+      }
+      &--label{
+        @include label;
+      }
+      &--burger-line{
+        @include first;
+      }
+      &--second, &--third{
+        @include second;
+      }
+      &--fourth{
+        @include four;
+      }
+      &--menu{
+        @include menu;
+        &--a{
+          @include menu-a;
         }
       }
     }
+
   }
 }
+
+#check-menu:checked ~ .header--wrapper--menu{
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#check-menu:checked ~ .header--wrapper--burger-line{
+  display: none;
+}
+
+#check-menu:checked ~ .header--wrapper--second{
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .header--wrapper--third{
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .header--wrapper--fourth{
+  display: none;
+}
+
 
 #hero {
   background: #010032;
@@ -108,7 +145,9 @@
 
     &--gen2 {
       margin: 0 0 0 50px;
-
+      &--h1{
+        font-size: 50px;
+      }
       &--num {
         @include flex;
         margin: 60px 0;
